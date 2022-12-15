@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+	<title>{{title}}</title>
+</head>
+<body>
+	<h1>hello world!</h1>
+	you made your own websites!!
+    <img src="{{url_for('static',filename='img/img1.JPG')}}">
+    <script type="text/javascript" src="{{url_for('static',filename='js/main.js')}}"></script>
+</body>
+{% for i in range(10)%}
+	<div>jinja2 is great!!!</div>
+{% endfor %}
+{% if num == 1 %}
+		<h1>good</h1>
+{% elif num == 2 %}
+		<h1>bad</h1>
+{% else %}
+		<h1>not</h1>
+{% endif %}
+</html>
+
